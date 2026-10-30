@@ -1,0 +1,29 @@
+:root{--bg:#0f1420;--panel:#171e2e;--line:#27314a;--text:#e8edf7;--muted:#8d9ab3;--brand:#ffd23f;--ok:#2fd27a;--err:#ff5d5d;--warn:#ffb020;--blue:#4c8dff}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--blue);text-decoration:none}.muted{color:var(--muted)}.small{font-size:12px}
+header{position:sticky;top:0;z-index:5;background:#0f1420ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header h1{font-size:19px;margin:0}.grow{flex:1}
+.btn{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:7px 13px;cursor:pointer;font:inherit}.btn:hover{border-color:#3a4766}.btn:disabled{opacity:.5}
+.btn.primary{background:var(--brand);color:#1b1500;border-color:var(--brand);font-weight:700}
+input,select{background:#0c111c;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:7px 10px;font:inherit}
+main{max-width:1250px;margin:0 auto;padding:16px 18px 60px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.tabs button{background:none;border:1px solid var(--line);color:var(--muted);padding:8px 14px;border-radius:20px;cursor:pointer;font:inherit}
+.tabs button.on{background:var(--brand);color:#1b1500;border-color:var(--brand);font-weight:700}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card.error{border-color:var(--err);box-shadow:0 0 0 1px var(--err) inset}.card.top{border-color:var(--ok)}
+.card .img{aspect-ratio:1/1;background:#fff;display:flex;align-items:center;justify-content:center;position:relative}.card .img img{max-width:100%;max-height:100%;object-fit:contain}
+.badge{position:absolute;top:8px;left:8px;padding:3px 8px;border-radius:6px;font-size:12px;font-weight:800}.b-error{background:var(--err);color:#fff}.b-top{background:var(--ok);color:#052}.b-buena{background:var(--warn);color:#2a1a00}
+.off{position:absolute;top:8px;right:8px;background:#000c;color:#fff;border-radius:6px;padding:3px 7px;font-weight:800;font-size:13px}
+.card .body{padding:10px 12px;display:flex;flex-direction:column;gap:5px;flex:1}.title{font-size:13px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;color:var(--text)}
+.price{font-size:22px;font-weight:800}.was{color:var(--muted);text-decoration:line-through;font-size:13px;margin-left:6px;font-weight:400}
+.why{font-size:12px;color:var(--warn)}.meta{font-size:12px;color:var(--muted)}
+.coupon{background:var(--panel);border:1px dashed var(--brand);border-radius:12px;padding:14px;margin-bottom:10px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.coupon .d{font-size:22px;font-weight:800;color:var(--brand);min-width:110px}.coupon code{background:#0c111c;border:1px solid var(--line);padding:2px 8px;border-radius:6px}
+.status{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:14px;display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+.empty{text-align:center;color:var(--muted);padding:50px 10px}
+.login{max-width:340px;margin:16vh auto;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:center}.login input{width:100%;margin:12px 0}
+#toasts{position:fixed;right:14px;bottom:14px;display:flex;flex-direction:column;gap:8px}.toast{background:#222c44;padding:10px 14px;border-radius:8px;border:1px solid var(--line)}.toast.error{background:#4a1d1d}
+
+.chips{margin-bottom:6px}.chips button{font-size:13px;padding:6px 12px}
